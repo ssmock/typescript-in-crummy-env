@@ -13,11 +13,11 @@ web-mode, emmet-mode, and tide for dev tasks, and magit, neotree, and window-num
 # Localhosting 
 
 ...has a catch on Android/Termux. It doesn't use the loopback IP. Instead,
-it uses the IP shown next to `arc0 `when you run `ifconfig`.
+it uses the IP shown next to `arc0` when you run `ifconfig`.
 
 # Another catch: hard links are forbidden
 
-This caused problems for me with `create-react-app`, but workarounds are available.
+This caused problems for me when experimenting with `create-react-app`, but workarounds are available.
 
 # Cheap Browserification
 
@@ -25,4 +25,4 @@ Rather than fooling around with Webpack, we take a more conservative approach to
 transpiling and bundling. TypeScript is configured to output AMD modules, and
 we require good old Require.js from a CDN. This alone is not sufficient, however;
 a script external to our TypeScript entry point, `app.ts` must be used to `require`
-and start up the application. Currently, this script resides in `index.html`.
+and thereby bootstrap the application. Currently, this script resides in `index.html`.
