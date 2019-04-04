@@ -1,0 +1,14 @@
+{
+  "name": "simple-web-test",
+  "version": "1.0.0",
+  "description": "My goal is to explore web development within Termux on an cheap ARM-based Chromebook.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "p5": "^0.7.3"
+  }
+}

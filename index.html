@@ -1,0 +1,19 @@
+<html>
+  <head>
+    <title>Test</title>
+  </head>
+  <body>
+    <h1>
+      mmmyellow
+    </h1>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.min.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+    <script type="text/javascript">
+      window.addEventListener("DOMContentLoaded", () => {
+	  require(["app"], function(appModule) {
+	      appModule.app.init();
+	  });
+      });
+    </script>
+  </body>
+</html>
